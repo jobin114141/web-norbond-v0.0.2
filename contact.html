@@ -198,7 +198,7 @@
   
           <!-- Right: Contact button with more right alignment -->
           <div class="ms-auto">
-            <a href="contact.html" class="btn btn-outline-light btn-sm">Contact</a>
+            <a href="contact.html" class="btn  btn-sm">Contact</a>
           </div>
         </div>
   
@@ -224,9 +224,7 @@
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
-                </li>
+           
               </ul>
             </div>
           </div>
@@ -494,7 +492,7 @@
     navbar.style.backgroundColor = 'white';
     allNavLinks.forEach(link => link.style.color = 'black');
     if (mobileContactButton) {
-        mobileContactButton.style.border = '1px solid black';
+        
         mobileContactButton.style.color = 'black';
     }
 
@@ -507,11 +505,10 @@
         allLogoImages.forEach(img => img.src = scrolledLogoSrc);
 
         // Change all nav link text to white
-        allNavLinks.forEach(link => link.style.color = 'white');
+        allNavLinks.forEach(link => link.style.color = 'black');
 
         // Change contact button to white outline (white text)
         if (mobileContactButton) {
-          mobileContactButton.style.border = '1px solid white';
           mobileContactButton.style.color = 'white';
         }
 
@@ -527,7 +524,6 @@
 
         // Change contact button to black text and border
         if (mobileContactButton) {
-          mobileContactButton.style.border = '1px solid black';
           mobileContactButton.style.color = 'black';
         }
       }
