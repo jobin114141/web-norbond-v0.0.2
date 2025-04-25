@@ -749,7 +749,7 @@ a {
 
 @media screen and (max-width: 991px) { /* Applies to mobile (small screens) */
   .navbar-toggler {
-    border-color: white; /* Makes the button border white */
+    border-color: rgba(255, 255, 255, 0); /* Makes the button border white */
   }
   .navbar-toggler-icon {
     filter: invert(1); /* Turns the icon white */

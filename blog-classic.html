@@ -224,95 +224,80 @@
 
 
 
-  <nav
-    class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
+    <div class="container-fluid justify-content-center">
       <div class="row justify-content-between align-items-center w-100">
-
-        <div class="col-auto">
+        <!-- Desktop View: Left-aligned logo -->
+        <div class="col-auto d-none d-lg-block">
           <a href="index.html">
             <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
           </a>
-          
         </div>
-
+        
+        <!-- Mobile View: Restructured with menu on left, logo in center, contact on right -->
+        <div class="d-lg-none d-flex justify-content-between align-items-center w-100">
+          <!-- Left: Menu button -->
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          
+          <!-- Center: Logo -->
+          <div class="text-center">
+            <a href="index.html">
+              <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
+            </a>
+          </div>
+          
+          <!-- Right: Contact button -->
+          <div>
+            <a href="contact.html" class="btn btn-sm text-white">Contact</a>
+          </div>
+        </div>
+  
+        <!-- Desktop: Navigation menu -->
         <div class="col-auto">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel ">Menu</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
-
+            
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-
                 <li class="nav-item active">
                   <a class="nav-link contact-link" href="index.html">Home</a>
-
                 </li>
-                <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" id="dropdownHome" data-bs-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">Home</a>
-
-
-                <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownHome">
-                  <li>
-                    <a href="index.html" class="dropdown-item item-anchor">Home Layout 1</a>
-                  </li>
-                  <li>
-                    <a href="home2.html" class="dropdown-item item-anchor">Home Layout 2 <span class="badge bg-primary"></span></a>
-                  </li>
-                  <li>
-                    <a href="home3.html" class="dropdown-item item-anchor">Home Layout 3 <span class="badge bg-primary"></span></a>
-                  </li>
-                  <li>
-                    <a href="home4.html" class="dropdown-item item-anchor">Home Layout 4 <span class="badge bg-primary"></span></a>
-                  </li>
-                </ul>
-
-
-              </li> -->
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="shop-four-column-wide.html">Services</a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="blog-classic.html">Portfolio</a>
                 </li>
-
-
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
-
+        
+        <!-- Desktop: Contact link at right -->
         <div class="d-none d-lg-block col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
-
-
             <li class="nav-item">
               <a class="nav-link contact-link" href="contact.html">Contact</a>
             </li>
-
           </ul>
         </div>
-
       </div>
-
     </div>
   </nav>
 

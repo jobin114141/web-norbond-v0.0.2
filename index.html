@@ -236,77 +236,84 @@
 
 
 
-
-  <nav
-    class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
+    <div class="container-fluid justify-content-center">
       <div class="row justify-content-between align-items-center w-100">
-        <div class="col-auto">
+        
+        <!-- Desktop View: Left-aligned logo -->
+        <div class="col-auto d-none d-lg-block">
           <a href="index.html">
-            <img src="images/logos/white_logo.png" alt="logo" class="img-fluid"
-              style="height: 60px; border-radius: 5px;">
+            <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
           </a>
         </div>
-
+        
+        <!-- Mobile View: Logo centered using absolute positioning -->
+        <div class="d-lg-none d-flex justify-content-between align-items-center w-100 position-relative">
+          
+          <!-- Left: Menu button -->
+          <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+  
+          <!-- Center: Absolutely centered logo -->
+          <div class="position-absolute start-50 translate-middle-x">
+            <a href="index.html">
+              <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
+            </a>
+          </div>
+  
+          <!-- Right: Contact button -->
+          <div>
+            <a href="contact.html" class="btn btn-sm text-white">Contact</a>
+          </div>
+        </div>
+  
+        <!-- Desktop: Navigation menu -->
         <div class="col-auto">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel ">Menu</h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
-
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
-
                 <li class="nav-item active">
                   <a class="nav-link contact-link" href="index.html">Home</a>
-
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="shop-four-column-wide.html">Services</a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="blog-classic.html">Portfolio</a>
                 </li>
-
                 <li class="nav-item">
                   <a class="nav-link contact-link" href="single-post-no-sidebar.html">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link contact-link contactHide-link" href="contact.html">Contact</a>
                 </li>
-
               </ul>
             </div>
           </div>
         </div>
-
+  
+        <!-- Desktop: Contact link at right -->
         <div class="d-none d-lg-block col-3 col-lg-auto">
           <ul class="list-unstyled d-flex m-0">
-
-
             <li class="nav-item">
               <a class="nav-link contact-link" href="contact.html">Contact</a>
             </li>
-
           </ul>
         </div>
-
       </div>
-
     </div>
   </nav>
-
-
+  
   <section class="text-white">
     <div class="slideshow slide-in" style="height: 100vh;">
       <div class="swiper-wrapper">
