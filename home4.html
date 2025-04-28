@@ -193,6 +193,7 @@
   <nav class="navbar navbar-expand-lg navbar-light lg:text-white text-uppercase fs-6 p-3 border-bottom border-light align-items-center fixed-top border-opacity-10">
     <div class="container-fluid justify-content-center">
       <div class="row justify-content-between align-items-center w-100">
+        
         <!-- Desktop View: Left-aligned logo -->
         <div class="col-auto d-none d-lg-block">
           <a href="index.html">
@@ -201,7 +202,7 @@
         </div>
         
         <!-- Mobile View: Restructured with menu on left, logo in center, contact on right -->
-        <div class="d-lg-none d-flex justify-content-between align-items-center w-100">
+        <div class="d-lg-none d-flex justify-content-between align-items-center w-100 position-relative">
           <!-- Left: Menu button -->
           <div>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -211,7 +212,7 @@
           </div>
           
           <!-- Center: Logo -->
-          <div class="text-center">
+          <div class="position-absolute top-50 start-50 translate-middle">
             <a href="index.html">
               <img src="images/logos/white_logo.png" alt="logo" class="img-fluid" style="height: 60px; border-radius: 5px;">
             </a>
@@ -219,18 +220,16 @@
           
           <!-- Right: Contact button -->
           <div>
-            <a href="contact.html" class="btn  btn-sm text-white">Contact</a>
+            <a href="contact.html" class="btn btn-sm text-white">Contact</a>
           </div>
         </div>
   
         <!-- Desktop: Navigation menu -->
         <div class="col-auto">
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             
             <div class="offcanvas-body">
